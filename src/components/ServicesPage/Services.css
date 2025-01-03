@@ -22,9 +22,11 @@
 }
 
 .serviceCard:hover {
-  transform: translateY(-15px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-  background-color: #1a927cb8;
+  /* transform: translateY(-15px); */
+  /* box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); */
+  /* background-color: #1a927cb8; */
+  /* background: linear-gradient(to right, #1a927c, #34d399); */
+
   /* border-radius: 8px; */
 }
 
@@ -59,9 +61,9 @@ ul li strong {
   margin-top: auto; /* Push list content to the bottom */
 }
 
-.serviceCard:hover ul li strong {
+/* .serviceCard:hover ul li strong {
   color: #dfe2e1;
-}
+} */
 
 /* Responsive Layout */
 
