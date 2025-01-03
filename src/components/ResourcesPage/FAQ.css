@@ -1,0 +1,28 @@
+.faq-container {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.faq-title {
+  font-family: "Futura", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  font-family: "Futura", sans-serif;
+  font-size: 18px;
+  color: #627b5f; /* Custom color for headers */
+}
+
+.ant-collapse-content > .ant-collapse-content-box {
+  font-family: "Futura", sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+.ant-collapse > .ant-collapse-item-active {
+  border-color: #c0e863; /* Highlight border when active */
+}

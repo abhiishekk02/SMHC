@@ -1,0 +1,148 @@
+/* Row Styling */
+.serviceRow {
+  display: flex; /* Use Flexbox */
+  align-items: stretch;
+  height: 100%; /* Make row fill the available height */
+  gap: 10px; /* Add spacing between cards */
+}
+
+/* Card Styling */
+.serviceCard {
+  flex: 1; /* Allow cards to expand equally */
+  display: flex; /* Flexbox for card content alignment */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Push extra space to the bottom */
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f9f9f941;
+  border-left: 1px #e5e8e7 solid;
+  margin-bottom: 20px;
+  transition: transform 1s, box-shadow 0.3s;
+  border-radius: 12px;
+}
+
+.serviceCard:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #1a927cb8;
+  /* border-radius: 8px; */
+}
+
+.serviceTitle {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.serviceImg {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li strong {
+  color: #1b4d44;
+}
+
+/* Move the space to the bottom of the card */
+.serviceCard ul {
+  margin-top: auto; /* Push list content to the bottom */
+}
+
+.serviceCard:hover ul li strong {
+  color: #dfe2e1;
+}
+
+/* Responsive Layout */
+
+/* Large Screens (4 Cards in a Row) */
+@media (min-width: 992px) {
+  .serviceCard {
+    flex: 0 0 calc(25% - 20px); /* 25% width for 4 cards, minus gap */
+  }
+}
+
+/* Medium Screens (2 Cards in a Row) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .serviceCard {
+    flex: 0 0 calc(50% - 20px); /* 50% width for 2 cards, minus gap */
+  }
+}
+
+/* Small Screens (1 Card in a Row) */
+@media (max-width: 767px) {
+  .serviceCard {
+    flex: 0 0 100%; /* Full width for 1 card */
+  }
+
+  .serviceRow {
+    gap: 15px; /* Reduce gap on smaller screens */
+  }
+}
+@media (max-width: 767px) {
+  .treatmentItem {
+    font-size: 1.8rem !important; /* Smaller font size for mobile */
+  }
+}
+
+/* General Styling */
+
+.treatmentSectionMain {
+  background-color: #1b4d44 !important;
+}
+.treatmentSection {
+  height: 300px; /* Set a fixed height for the section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflowing items */
+  position: relative;
+}
+
+.treatmentScroller {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.treatmentItem {
+  font-size: 3rem; /* Large font size for the current item */
+  font-weight: bold;
+  color: #34d399; /* Use a standout color */
+  opacity: 0;
+  transform: translateY(100%);
+  animation: scrollUp 3s ease-in-out infinite; /* Animation for scrolling up */
+}
+
+/* Animation */
+@keyframes scrollUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
