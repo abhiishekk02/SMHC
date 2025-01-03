@@ -8,6 +8,7 @@ import Contact from "./components/ContactPage/Contact";
 import Showcase from "./components/ShowcasePage/Showcase";
 import OurServices from "./components/ServicesPage/Services";
 import AboutUs from "./components/AboutPage/About";
+import Home from "./components/HomePage/Home";
 // import Home from "./Components/HomePage/Home";
 // import AboutUs from "./Components/AboutPage/AboutUs";
 // import Resources from "./Components/ResourcesPage/Resources";
@@ -17,7 +18,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
           {/* <Route path="/about" element={<AboutUs />} /> */}
           <Route path="/resources" element={<Resources />} />
           <Route path="/contact" element={<Contact />} />
