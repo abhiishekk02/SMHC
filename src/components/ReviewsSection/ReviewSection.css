@@ -1,0 +1,68 @@
+.reviewsSection {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.headingText-RS {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.reviewBox {
+  background-color: #2c7a7b;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.reviewBox:hover {
+  transform: scale(1.05);
+}
+
+.RS-Img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.reviewerName {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.reviewerStar i {
+  margin-right: 2px;
+}
+
+.reviewerComment {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.review-carousel {
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.review-carousel > div {
+  scroll-snap-align: center;
+}
+
+.review-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.review-carousel::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.review-carousel::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

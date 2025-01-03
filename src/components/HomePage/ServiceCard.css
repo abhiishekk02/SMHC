@@ -1,0 +1,81 @@
+/* Main container styling */
+.our-services-container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Header styling */
+.services-header {
+  margin-bottom: 40px;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.services-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Service card styling */
+.service-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Service image styling */
+.service-image {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Service text styling */
+.service-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.service-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Button styling */
+.learn-more-button {
+  background-color: #1a927c;
+  border-color: #1a927c;
+  color: #fff;
+}
+
+.learn-more-button:hover {
+  background-color: #157d65;
+  border-color: #157d65;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-subtitle {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
