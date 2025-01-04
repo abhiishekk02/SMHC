@@ -6,7 +6,7 @@ const { Content } = Layout;
 const { Title, Paragraph } = Typography;
 const PrivacyPolicy = () => (
   <Layout>
-    <Content style={{ padding: "50px", background: "#f1f4e7" }}>
+    <Content style={{ padding: "2em", background: "#f1f4e7" }}>
       <Card
         title="Privacy Policy"
         bordered={false}

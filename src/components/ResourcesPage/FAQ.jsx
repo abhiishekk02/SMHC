@@ -7,59 +7,60 @@ const FAQ = () => {
   const faqData = [
     {
       key: "1",
-      header: "What can I expect during my first session?",
+      label: "What can I expect during my first session?",
       children:
         "Your first session is an opportunity to get to know your therapist and discuss your goals for therapy. It typically involves a review of your history and current concerns to create a tailored plan for your needs.",
     },
     {
       key: "2",
-      header: "Are sessions in-person or virtual?",
+      label: "Are sessions in-person or virtual?",
       children:
         "We offer both in-person sessions at our office and virtual sessions via Google Meets to accommodate your preferences and schedule.",
     },
     {
       key: "3",
-      header: "How do I schedule an appointment?",
+      label: "How do I schedule an appointment?",
       children:
         "You can schedule an appointment by calling our office, visiting our website, or emailing us. Our team will assist you in finding a time that works best for you.",
     },
     {
       key: "4",
-      header: "Do you accept insurance?",
+      label: "Do you accept insurance?",
       children:
         "Yes, we accept several major insurance plans. Please contact us to confirm if your plan is covered. For out-of-network plans, we provide superbills for reimbursement.",
     },
     {
       key: "5",
-      header: "What if I can’t afford therapy?",
+      label: "What if I can’t afford therapy?",
       children:
         "We offer a limited number of sliding-scale slots for clients based on financial need. Contact us to discuss your situation, and we will do our best to work with you.",
     },
     {
       key: "6",
-      header: "What forms of payment do you accept?",
+      label: "What forms of payment do you accept?",
       children:
         "We accept credit/debit cards, HSA/FSA cards, and electronic payments through our secure client portal.",
     },
     {
       key: "7",
-      header: "What is your cancellation policy?",
+      label: "What is your cancellation policy?",
       children:
         "We require at least 24 hours' notice for cancellations. Late cancellations or no-shows may incur a fee.",
     },
     {
       key: "8",
-      header: "How often should I come to therapy?",
+      label: "How often should I come to therapy?",
       children:
         "The frequency of sessions is based on your needs and goals. Many clients start with weekly sessions and adjust as progress is made.",
     },
     {
       key: "9",
-      header: "Can I change therapists if I don’t feel it’s a good fit?",
+      label: "Can I change therapists if I don’t feel it’s a good fit?",
       children:
         "Absolutely. It’s important to feel comfortable with your therapist. Let us know if you’d like to explore other options.",
     },
   ];
+
   return (
     <div className="faq-container" style={{ padding: "40px 20px" }}>
       <h2
@@ -72,7 +73,7 @@ const FAQ = () => {
         {/* Left Column: Image */}
         <Col xs={24} md={10} style={{ textAlign: "center" }}>
           <img
-            src={FAQImg} // Replace with your FAQ illustration/image URL
+            src={FAQImg}
             alt="FAQ Illustration"
             style={{
               maxWidth: "100%",

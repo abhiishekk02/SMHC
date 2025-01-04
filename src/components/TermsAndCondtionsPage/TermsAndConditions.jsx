@@ -7,7 +7,7 @@ const { Title, Paragraph } = Typography;
 
 const TermsAndConditions = () => (
   <Layout>
-    <Content style={{ padding: "50px", background: "#f1f4e7" }}>
+    <Content style={{ padding: "2em", background: "#f1f4e7" }}>
       <Card
         title="Terms and Conditions"
         bordered={false}

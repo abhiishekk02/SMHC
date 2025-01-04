@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container-fluid footerContainer">
-        <div className="row">
+        <div className="row  justify-content-center">
           {/* About Section */}
-          <div className="col-md-4">
-            <img className="w-75" src={Logo} alt="" />
+          <div className="col-md-4 d-flex justify-content-center align-items-center text-center">
+            <img className="w-75" src={Logo} alt="Logo" />
           </div>
           <div className="col-md-4 footerSection">
             <h5>About Us</h5>
