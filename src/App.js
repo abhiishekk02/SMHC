@@ -10,6 +10,8 @@ import OurServices from "./components/ServicesPage/Services";
 import AboutUs from "./components/AboutPage/About";
 import Home from "./components/HomePage/Home";
 import ScrollToTop from "./ScrollToTop";
+import PrivacyPolicy from "./components/PrivacyPolicyPage/PrivacyPolicy";
+import TermsAndConditions from "./components/TermsAndCondtionsPage/TermsAndConditions";
 // import Home from "./Components/HomePage/Home";
 // import AboutUs from "./Components/AboutPage/AboutUs";
 // import Resources from "./Components/ResourcesPage/Resources";
@@ -26,6 +28,8 @@ function App() {
           <Route path="/showcase" element={<Showcase />} />
           <Route path="/ourservices" element={<OurServices />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
         </Routes>
       </Router>
     </div>

@@ -1,22 +1,23 @@
-/* General Styling */
+/* General Navbar Styling */
 nav {
-  background-color: #f1f4e7db; /* Set background color to white */
-  backdrop-filter: blur(8px);
+  background-color: #f1f4e7db; /* Light background color */
+  backdrop-filter: blur(8px); /* Blur effect for modern design */
   padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 120px;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+  height: 150px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* Stack logo and nav links vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
 }
 
+/* Logo Styling */
 .logo {
-  font-size: 28px;
-  font-weight: 500;
-  font-family: "Futura", sans-serif;
-  color: #333;
-  margin: 10px 0;
-  text-align: center;
+  height: 100px; /* Adjust height for logo size */
+  /* margin-bottom: 10px; */
 }
 
 /* Navbar Links Styling */
@@ -24,8 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
-  margin: 0 auto;
+  width: 70%; /* Adjust width for links container */
   transition: all 0.3s ease-in-out;
 }
 
@@ -48,8 +48,8 @@ nav {
 /* Responsive Styling */
 @media (max-width: 768px) {
   .navLinks {
-    display: none;
-    flex-direction: column;
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
     align-items: center;
     background-color: #ffffff; /* Match navbar background */
     padding: 20px;
@@ -61,7 +61,7 @@ nav {
   }
 
   .navLinks.open {
-    display: flex;
+    display: flex; /* Show links when menu is open */
   }
 
   .navLinks a {
@@ -73,7 +73,7 @@ nav {
 
 /* Hamburger Button */
 .hamburger {
-  display: none;
+  display: none; /* Hide hamburger by default */
   background: none;
   border: none;
   font-size: 24px;
@@ -88,7 +88,7 @@ nav {
 /* Show Hamburger on Small Screens */
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: block; /* Show hamburger on smaller screens */
     margin-left: auto;
     margin-right: 20px;
   }

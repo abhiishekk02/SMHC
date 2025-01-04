@@ -46,6 +46,7 @@ const HomePage = () => {
         id="carouselExampleIndicators"
         className="carousel slide heroSectionContainer"
         data-bs-ride="carousel"
+        data-bs-interval="5000"
       >
         {/* Indicators */}
         <div className="carousel-indicators">
@@ -134,16 +135,16 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div class="section">
-        <h1 class="section-title">What Sets Us Apart</h1>
-        <p class="section-description my-4">
+      <div className="section">
+        <h1 className="section-title">What Sets Us Apart</h1>
+        <p className="section-description my-4">
           At Synergy Mental Health Consulting, we go beyond traditional
           counseling to provide a truly transformative experience. Here's what
           makes us unique:
         </p>
-        <div class="cards">
-          <div class="card">
-            <div class="icon">🌍</div>
+        <div className="cards">
+          <div className="card">
+            <div className="icon">🌍</div>
             <h2>Culturally Sensitive Care</h2>
             <p>
               We understand the importance of cultural context in mental health,
@@ -151,8 +152,8 @@ const HomePage = () => {
               experiences.
             </p>
           </div>
-          <div class="card">
-            <div class="icon">🧘</div>
+          <div className="card">
+            <div className="icon">🧘</div>
             <h2>Holistic Approach</h2>
             <p>
               Our services integrate mind, body, and spirit, fostering total
@@ -160,16 +161,16 @@ const HomePage = () => {
               life.
             </p>
           </div>
-          <div class="card">
-            <div class="icon">💼</div>
+          <div className="card">
+            <div className="icon">💼</div>
             <h2>Experienced Professionals</h2>
             <p>
               Backed by decades of expertise, our team offers compassionate,
               personalized care tailored to your specific needs.
             </p>
           </div>
-          <div class="card">
-            <div class="icon">🤝</div>
+          <div className="card">
+            <div className="icon">🤝</div>
             <h2>Empowering Community</h2>
             <p>
               We create a safe space for individuals to connect, share, and
@@ -177,8 +178,8 @@ const HomePage = () => {
               support of others.
             </p>
           </div>
-          <div class="card">
-            <div class="icon">🚀</div>
+          <div className="card">
+            <div className="icon">🚀</div>
             <h2>Commitment to Your Growth</h2>
             <p>
               Our focus is not just on healing but on helping you rediscover

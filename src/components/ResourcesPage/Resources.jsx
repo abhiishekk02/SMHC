@@ -29,9 +29,6 @@ export default function Resources() {
             transition: "box-shadow 0.4s ease-in-out", // Smooth shadow transition
             fontFamily: "Futura, sans-serif", // Apply Futura font globally to the card
           }}
-          bodyStyle={{
-            fontFamily: "Futura, sans-serif", // Ensure content inside card also uses Futura
-          }}
         >
           <Card.Meta
             title={

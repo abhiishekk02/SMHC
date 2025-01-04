@@ -1,11 +1,14 @@
 import "./Footer.css";
-
+import Logo from "../../Assets/Logo.png";
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="container-fluid footerContainer">
         <div className="row">
           {/* About Section */}
+          <div className="col-md-4">
+            <img className="w-75" src={Logo} alt="" />
+          </div>
           <div className="col-md-4 footerSection">
             <h5>About Us</h5>
             <p>
@@ -31,9 +34,9 @@ export default function Footer() {
           {/* Social Media Section */}
         </div>
 
-        <div className="footerBottom">
+        {/* <div className="footerBottom">
           <p>&copy; {new Date().getFullYear()} SMHC. All Rights Reserved.</p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
