@@ -18,7 +18,8 @@
 }
 body {
   background-color: #f1f4e7 !important;
-  font-family: "Futura" !important;
+  /* font-family: "Futura" !important; */
+  font-family: "Montserrat" !important;
 }
 
 p {

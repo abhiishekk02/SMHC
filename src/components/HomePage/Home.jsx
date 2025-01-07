@@ -92,7 +92,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="container my-5">
+      {/* <div className="container my-5">
         <div className="ourMission p-4">
           <div className="row">
             <div className="col-md-8">
@@ -134,7 +134,8 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
       <div className="section">
         <h1 className="section-title">What Sets Us Apart</h1>
         <p className="section-description my-4">
@@ -184,6 +185,15 @@ const HomePage = () => {
             <p>
               Our focus is not just on healing but on helping you rediscover
               your strength, dream bigger, and unlock a life of fulfillment.
+            </p>
+          </div>
+          <div className="card">
+            <div className="icon">💰</div>
+            <h2>Accessible and Affordable Care</h2>
+            <p>
+              We believe mental health support should be accessible to everyone.
+              Our commitment to affordability ensures you receive quality care
+              without compromising your financial well-being.
             </p>
           </div>
         </div>

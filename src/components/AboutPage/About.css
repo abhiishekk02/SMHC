@@ -155,3 +155,45 @@
     font-size: 1.2rem;
   }
 }
+/* Timeline Section */
+.timeline-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #1b4d44;
+  margin-bottom: 20px;
+}
+
+.timeline-year {
+  font-weight: bold;
+  color: #1b4d44;
+  font-size: 1.2rem;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.timeline-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.custom-timeline .ant-timeline-item-left {
+  text-align: left;
+}
+
+.custom-timeline .ant-timeline-item-label {
+  font-size: 1rem;
+  color: #34d399;
+}
+
+.custom-timeline .ant-timeline-item {
+  margin-bottom: 30px;
+}

@@ -1,14 +1,24 @@
 import "./Footer.css";
-import Logo from "../../Assets/Logo.png";
+import Logo from "../../Assets/Logo2.png";
+import { Link } from "react-router-dom"; // For routing links
+
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  };
   return (
     <footer className="footer">
       <div className="container-fluid footerContainer">
-        <div className="row  justify-content-center">
-          {/* About Section */}
+        <div className="row justify-content-center">
+          {/* Logo Section */}
           <div className="col-md-4 d-flex justify-content-center align-items-center text-center">
-            <img className="w-75" src={Logo} alt="Logo" />
+            <img className="w-50" src={Logo} alt="Logo" />
           </div>
+
+          {/* About Section */}
           <div className="col-md-4 footerSection">
             <h5>About Us</h5>
             <p>
@@ -30,13 +40,34 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Social Media Section */}
         </div>
 
-        {/* <div className="footerBottom">
+        {/* Links Section */}
+        <div className="row mt-3">
+          <div className="col-md-12 text-center">
+            <ul className="footerLinks">
+              <li>
+                <Link
+                  onClick={scrollToTop}
+                  to="/privacypolicy"
+                  className="footerLink"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link onClick={scrollToTop} to="/terms" className="footerLink">
+                  Terms and Conditions
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className="footerBottom text-center mt-3">
           <p>&copy; {new Date().getFullYear()} SMHC. All Rights Reserved.</p>
-        </div> */}
+        </div>
       </div>
     </footer>
   );

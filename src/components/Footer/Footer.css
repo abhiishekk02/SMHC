@@ -73,3 +73,28 @@
     justify-content: center;
   }
 }
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: #ffffff; /* White text */
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #c0e863; /* Highlight color */
+}
+
+.footerBottom {
+  color: #888888;
+  font-size: 12px;
+}

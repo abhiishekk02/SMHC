@@ -69,12 +69,13 @@
 
 .headingText-OM,
 .headingText-OV {
-  font-family: "TF";
+  /* font-family: "TF"; */
+  font-weight: 600;
   font-size: 40px;
 }
 .contentText-OM,
 .contentText-OV {
-  font-family: "Futura";
+  /* font-family: "Futura"; */
   font-size: 18px;
 }
 

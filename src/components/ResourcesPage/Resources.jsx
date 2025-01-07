@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 export default function Resources() {
   const ResourceCard = ({ cardImg, cardTitle, cardDesc, cardLink }) => {
     return (
-      <Col xs={24} sm={12} md={8} lg={8}>
+      <Col xs={24} sm={12} md={8} lg={7}>
         <Card
           hoverable
           cover={
@@ -14,7 +14,7 @@ export default function Resources() {
               alt={cardTitle}
               src={cardImg}
               style={{
-                aspectRatio: "3/2",
+                aspectRatio: "5/2",
                 objectFit: "contain",
                 marginBottom: "10px",
               }}

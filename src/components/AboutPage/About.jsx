@@ -1,8 +1,32 @@
 import React from "react";
 import "./About.css";
 import Footer from "../Footer/Footer";
-
+import { Timeline } from "antd";
+import Logo2 from "../../Assets/Logo2.png";
 const AboutUs = () => {
+  const milestones = [
+    {
+      year: "1995",
+      description:
+        "Earned a Master’s degree in Counseling from New York University.",
+    },
+    {
+      year: "2006",
+      description:
+        "One of the first to receive licensure as a Mental Health Counselor from New York State.",
+    },
+    {
+      year: "2014",
+      description:
+        "Started a private practice, offering services to a wide range of clients.",
+    },
+    {
+      year: "2023",
+      description:
+        "Established Synergy Mental Health Counseling Group Practice in Nassau County.",
+    },
+  ];
+
   return (
     <div className="about-us-page">
       {/* Hero Section */}
@@ -66,7 +90,38 @@ const AboutUs = () => {
           <button className="read-more-button">Read More</button>
         </div>
       </div>
-
+      {/* Timeline Section */}
+      {/* Timeline Section */}
+      <div className="timeline-section">
+        <h2 className="section-title">Our Journey</h2>
+        <div className="row align-items-center ">
+          <div className="col-md-2"></div>
+          <div className="col-md-3 d-flex justify-content-center">
+            <img
+              src={Logo2}
+              className="w-100 timeline-image"
+              alt="Synergy Logo"
+            />
+          </div>
+          <div className="col-md-5 px-3">
+            <Timeline mode="left" className="custom-timeline">
+              {milestones.map((milestone, index) => (
+                <Timeline.Item
+                  key={index}
+                  label={
+                    <span className="timeline-year">{milestone.year}</span>
+                  }
+                >
+                  <p className="timeline-description">
+                    {milestone.description}
+                  </p>
+                </Timeline.Item>
+              ))}
+            </Timeline>
+          </div>
+          <div className="col-md-2"></div>
+        </div>
+      </div>
       {/* Closing Section */}
       <div className="closing-section">
         <h2>Let’s Build a Better You</h2>
