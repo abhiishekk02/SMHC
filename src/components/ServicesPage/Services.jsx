@@ -19,113 +19,97 @@ export default function Services() {
   }, [treatments.length]);
   return (
     <>
-      <div className="container">
-        <p className="headline h1 my-4">Services</p>
-        <div className="row serviceRow">
+      <div className="container service-container">
+        <p className="headline h1 my-4 text-center">Our Services</p>
+        <div className="services-grid">
           {/* Individual Counseling */}
-          <div className="col-md-3 serviceCard">
-            <p className="serviceTitle h3 my-2">Individual Counseling</p>
+          <div className="service-card">
             <img
-              src="https://img.freepik.com/free-vector/man-talking-therapist-her-office-patient-sitting-armchair-speaking-while-positive-doctor-taking-notes-vector-illustration-psychological-counseling-psychotherapy-concept_74855-13153.jpg?semt=ais_hybrid"
+              src="https://dy7glz37jgl0b.cloudfront.net/advice/images/4cc78ebfbd184ca74659371a1455905e-istock-1328878125_l.jpg"
               alt="Individual Counseling"
-              className="serviceImg"
+              className="service-img"
             />
-            <h4>Benefits of Individual Counseling</h4>
-            <ul>
+            <h3 className="service-title">Individual Counseling</h3>
+            <ul className="service-benefits">
               <li>
-                <strong>One-on-One Support:</strong> Individual counseling is a
-                personalized therapeutic process between you and a licensed
-                therapist.
+                <strong>One-on-One Support:</strong> A personalized therapeutic
+                process.
               </li>
               <li>
-                <strong>Tailored to Your Needs:</strong> The sessions are
-                customized to address your unique challenges, goals, and
-                circumstances.
+                <strong>Tailored to Your Needs:</strong> Address unique
+                challenges and goals.
               </li>
               <li>
-                <strong>Confidential Space:</strong> Provides a safe and private
-                environment to openly explore your thoughts, emotions, and
-                behaviors.
+                <strong>Confidential Space:</strong> Safe environment to explore
+                thoughts.
               </li>
             </ul>
           </div>
 
           {/* Telehealth Counseling */}
-          <div className="col-md-3 serviceCard">
-            <p className="serviceTitle h3 my-2">Telehealth Counseling</p>
+          <div className="service-card">
             <img
-              className="serviceImg"
+              src="https://freedomwithincenter.com/wp-content/uploads/2018/09/APA-Blog-Online-Therapy-II-1-1080x675.jpg"
               alt="Telehealth Counseling"
-              src="https://static.vecteezy.com/system/resources/previews/002/779/420/non_2x/online-therapy-and-counselling-under-stress-and-depression-young-woman-psychotherapist-supports-female-with-psychological-problems-illustration-vector.jpg"
+              className="service-img"
             />
-            <h4>Benefits of Telehealth Counseling</h4>
-            <ul>
+            <h3 className="service-title">Telehealth Counseling</h3>
+            <ul className="service-benefits">
               <li>
-                <strong>Convenience and Flexibility:</strong> Telehealth
-                counseling allows you to access therapy from the comfort of your
-                home.
+                <strong>Convenience:</strong> Access therapy from home.
               </li>
               <li>
-                <strong>Secure and Private:</strong> Uses secure,
-                HIPAA-compliant video platforms to protect your privacy.
+                <strong>Secure:</strong> HIPAA-compliant video platforms.
               </li>
               <li>
-                <strong>Access to Licensed Therapists:</strong> Connect with a
-                qualified therapist for personalized sessions tailored to your
-                needs.
+                <strong>Licensed Therapists:</strong> Personalized sessions
+                tailored to your needs.
               </li>
             </ul>
           </div>
 
           {/* Couples Counseling */}
-          <div className="col-md-3 serviceCard">
-            <p className="serviceTitle h3 my-2">Couples Counseling</p>
+          <div className="service-card">
             <img
-              className="serviceImg"
+              src="https://wakecounseling.com/wp-content/uploads/elementor/thumbs/marriage-couples-counseling-qswccn1ysf589iafxaa4vgnungcpn50oubuwldzuqg.jpg"
               alt="Couples Counseling"
-              src="https://media.istockphoto.com/id/1414940766/vector/pregnant-woman-and-her-husband-visit-gynecologist-in-the-medical-office-female-doctor-talks.jpg?s=612x612&w=0&k=20&c=nSlCyaPN5vJ_k2s-OV1o5-2YQzgH9gnghU0577mx1NY="
+              className="service-img"
             />
-            <h4>Benefits of Couples Counseling</h4>
-            <ul>
+            <h3 className="service-title">Couples Counseling</h3>
+            <ul className="service-benefits">
               <li>
-                <strong>Supportive and Neutral Space:</strong> Offers a safe
-                environment for partners to work on their relationship.
+                <strong>Supportive Space:</strong> Work on your relationship.
               </li>
               <li>
-                <strong>Improved Communication:</strong> Focuses on enhancing
-                how partners express themselves and listen to each other.
+                <strong>Improved Communication:</strong> Learn to express and
+                listen effectively.
               </li>
               <li>
-                <strong>Building Trust:</strong> Aims to rebuild and strengthen
-                trust within the relationship.
+                <strong>Building Trust:</strong> Rebuild and strengthen trust.
               </li>
             </ul>
           </div>
 
           {/* Group Counseling */}
-          <div className="col-md-3 serviceCard">
-            <p className="serviceTitle h3 my-2">Group Counseling</p>
+          <div className="service-card">
             <img
-              className="serviceImg"
+              src="https://media.istockphoto.com/id/1454585686/photo/diversity-mental-health-and-group-therapy-counseling-support-meeting-healthy-conversation-and.jpg?s=612x612&w=0&k=20&c=7-kDTlCiMLzq_MM6yhnv7mZbyB7HWxM1n_JE5EkR9ZE="
               alt="Group Counseling"
-              src="https://media.istockphoto.com/id/1435832032/vector/group-psychotherapy-persons-sitting-in-circle-and-talking-people-meeting-psychotherapy.jpg?s=612x612&w=0&k=20&c=OQibuYZLqcYVYDsa3e63isb4RNX9Mtsw40MZRP6eJD8="
+              className="service-img"
             />
-            <h4>Benefits of Group Counseling</h4>
-            <ul>
+            <h3 className="service-title">Group Counseling</h3>
+            <ul className="service-benefits">
               <li>
-                <strong>Peer Support:</strong> Share experiences and receive
-                feedback from others who understand your journey.
+                <strong>Peer Support:</strong> Share experiences with others.
               </li>
               <li>
-                <strong>Diverse Perspectives:</strong> Learn from the unique
-                backgrounds and viewpoints of fellow group members.
+                <strong>Diverse Perspectives:</strong> Learn from unique
+                viewpoints.
               </li>
               <li>
-                <strong>Skill Development:</strong> Build practical skills for
-                managing stress, improving communication, and enhancing
-                relationships.
+                <strong>Skill Development:</strong> Build stress management and
+                communication skills.
               </li>
-              <br />
             </ul>
           </div>
         </div>

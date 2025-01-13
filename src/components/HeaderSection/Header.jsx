@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
-import Logo from "../../Assets/Logo1.png";
+import Logo from "../../Assets/Logo4.png";
 import { Button, Dropdown, Space, Modal } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 
@@ -76,7 +76,7 @@ const Header = () => {
             type="primary"
             href="tel:+15163039925"
             size="large"
-            style={{ width: "45%" }}
+            style={{ width: "30%" }}
           >
             Call Us
           </Button>
@@ -84,9 +84,17 @@ const Header = () => {
             type="default"
             href="mailto:admin@SynergyMHC.com"
             size="large"
-            style={{ width: "45%" }}
+            style={{ width: "30%" }}
           >
             Email Us
+          </Button>
+          <Button
+            type="default"
+            href="https://docs.google.com/forms/d/1OS49H8XeO8DkgbafV7dVpQfaxmNhOF_EhjckIO3aisg/edit"
+            size="large"
+            style={{ width: "30%" }}
+          >
+            Service Form
           </Button>
         </div>
       </Modal>

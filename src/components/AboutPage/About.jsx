@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import Footer from "../Footer/Footer";
 import { Timeline } from "antd";
-import Logo2 from "../../Assets/Logo2.png";
+import Logo2 from "../../Assets/Logo3.png";
 const AboutUs = () => {
   const milestones = [
     {

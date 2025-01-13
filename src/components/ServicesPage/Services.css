@@ -1,33 +1,37 @@
-/* Row Styling */
+/* ==========================
+   General Styling
+   ========================== */
+
+/* ==========================
+     Row Styling
+     ========================== */
 .serviceRow {
-  display: flex; /* Use Flexbox */
+  display: flex;
   align-items: stretch;
-  height: 100%; /* Make row fill the available height */
-  gap: 10px; /* Add spacing between cards */
+  height: 100%;
+  gap: 10px;
 }
 
-/* Card Styling */
+/* ==========================
+     Service Card Styling
+     ========================== */
 .serviceCard {
-  flex: 1; /* Allow cards to expand equally */
-  display: flex; /* Flexbox for card content alignment */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: space-between; /* Push extra space to the bottom */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   overflow-y: auto;
   padding: 10px;
   background-color: #f9f9f941;
   border-left: 1px #e5e8e7 solid;
   margin-bottom: 20px;
-  transition: transform 1s, box-shadow 0.3s;
   border-radius: 12px;
+  transition: transform 1s, box-shadow 0.3s;
 }
 
 .serviceCard:hover {
-  /* transform: translateY(-15px); */
-  /* box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); */
-  /* background-color: #1a927cb8; */
-  /* background: linear-gradient(to right, #1a927c, #34d399); */
-
-  /* border-radius: 8px; */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .serviceTitle {
@@ -56,58 +60,53 @@ ul li strong {
   color: #1b4d44;
 }
 
-/* Move the space to the bottom of the card */
 .serviceCard ul {
-  margin-top: auto; /* Push list content to the bottom */
+  margin-top: auto;
 }
 
-/* .serviceCard:hover ul li strong {
-  color: #dfe2e1;
-} */
-
-/* Responsive Layout */
-
-/* Large Screens (4 Cards in a Row) */
+/* ==========================
+     Responsive Layout
+     ========================== */
 @media (min-width: 992px) {
   .serviceCard {
-    flex: 0 0 calc(25% - 20px); /* 25% width for 4 cards, minus gap */
+    flex: 0 0 calc(25% - 20px);
   }
 }
 
-/* Medium Screens (2 Cards in a Row) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (768px <= width <= 991px) {
   .serviceCard {
-    flex: 0 0 calc(50% - 20px); /* 50% width for 2 cards, minus gap */
+    flex: 0 0 calc(50% - 20px);
   }
 }
 
-/* Small Screens (1 Card in a Row) */
 @media (max-width: 767px) {
   .serviceCard {
-    flex: 0 0 100%; /* Full width for 1 card */
+    flex: 0 0 100%; /* Full width for smaller screens */
+    max-width: 350px !important; /* Ensure max width is 350px */
+    margin: 0 auto; /* Center the card horizontally */
   }
-
   .serviceRow {
     gap: 15px; /* Reduce gap on smaller screens */
   }
-}
-@media (max-width: 767px) {
+
   .treatmentItem {
-    font-size: 1.8rem !important; /* Smaller font size for mobile */
+    font-size: 1.8rem !important;
   }
 }
 
-/* General Styling */
-
+/* ==========================
+     Treatment Section Styling
+     ========================== */
 .treatmentSectionMain {
   background-color: #1b4d44 !important;
 }
+
 .treatmentSection {
-  height: 300px; /* Set a fixed height for the section */
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Hide overflowing items */
+  overflow: hidden;
   position: relative;
 }
 
@@ -121,24 +120,23 @@ ul li strong {
 }
 
 .treatmentItem {
-  font-size: 3rem; /* Large font size for the current item */
+  font-size: 3rem;
   font-weight: bold;
-  color: #34d399; /* Use a standout color */
+  color: #34d399;
   opacity: 0;
   transform: translateY(100%);
-  animation: scrollUp 3s ease-in-out infinite; /* Animation for scrolling up */
+  animation: scrollUp 3s ease-in-out infinite;
 }
 
-/* Animation */
+/* ==========================
+     Animation
+     ========================== */
 @keyframes scrollUp {
   0% {
     opacity: 0;
     transform: translateY(100%);
   }
-  25% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  25%,
   75% {
     opacity: 1;
     transform: translateY(0);
@@ -147,4 +145,65 @@ ul li strong {
     opacity: 0;
     transform: translateY(-100%);
   }
+}
+
+/* ==========================
+     Services Container
+     ========================== */
+.service-container {
+  padding: 40px 20px;
+}
+
+.headline {
+  font-size: 2.5rem;
+  color: #1b4d44;
+  margin-bottom: 30px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.service-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-title {
+  font-size: 20px !important;
+  color: #1b4d44;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.service-benefits {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.service-benefits li {
+  margin-bottom: 10px;
+}
+
+.service-benefits li strong {
+  color: #1b4d44;
 }

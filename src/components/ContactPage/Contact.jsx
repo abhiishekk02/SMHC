@@ -65,7 +65,7 @@ const Contact = () => {
           <div className="social-media">
             <h2>Connect With Us</h2>
             <a
-              href="https://www.psychologytoday.com/profile/240968"
+              href="https://www.psychologytoday.com/profile/261382"
               target="_blank"
               rel="noopener noreferrer"
             >

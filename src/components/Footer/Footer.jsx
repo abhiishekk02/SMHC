@@ -1,5 +1,5 @@
 import "./Footer.css";
-import Logo from "../../Assets/Logo2.png";
+import Logo from "../../Assets/Logo3.png";
 import { Link } from "react-router-dom"; // For routing links
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="row justify-content-center">
           {/* Logo Section */}
           <div className="col-md-4 d-flex justify-content-center align-items-center text-center">
-            <img className="w-50" src={Logo} alt="Logo" />
+            <img className="w-75" src={Logo} alt="Logo" />
           </div>
 
           {/* About Section */}

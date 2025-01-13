@@ -3,6 +3,13 @@ import "./Home.css";
 import ReviewsSection from "../ReviewsSection/ReviewSection";
 import OurServices from "./ServicesCard";
 import Footer from "../Footer/Footer";
+import img2 from "../../Assets/image-2.png";
+import img3 from "../../Assets/image-3.png";
+import img4 from "../../Assets/image-4.png";
+import img5 from "../../Assets/image-5.png";
+import img6 from "../../Assets/image-6.png";
+import img7 from "../../Assets/image-7.png";
+
 const HomePage = () => {
   const slides = [
     {
@@ -14,7 +21,7 @@ const HomePage = () => {
       buttonText: "Contact Us Today",
       buttonLink: "/contact",
       backgroundImage:
-        "https://plus.unsplash.com/premium_photo-1682546068715-386bd3c676e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://as1.ftcdn.net/v2/jpg/04/84/87/34/1000_F_484873483_hg1ofIdXbMha5lKEDG3hJBrwKh1oikTq.jpg",
     },
     {
       id: 2,
@@ -25,7 +32,7 @@ const HomePage = () => {
       buttonText: "Learn More",
       buttonLink: "/about",
       backgroundImage:
-        "https://plus.unsplash.com/premium_photo-1668613402936-98ce515c5cc5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.cdc.gov/dnpao-data-trends-maps/media/images/2-adults-walking-with-young-child.jpg",
     },
     {
       id: 3,
@@ -34,7 +41,7 @@ const HomePage = () => {
       description:
         "Explore our services and discover the power of healing and growth.",
       buttonText: "Explore Services",
-      buttonLink: "/services",
+      buttonLink: "/ourservices",
       backgroundImage:
         "https://plus.unsplash.com/premium_photo-1682546068715-386bd3c676e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -46,7 +53,8 @@ const HomePage = () => {
         id="carouselExampleIndicators"
         className="carousel slide heroSectionContainer"
         data-bs-ride="carousel"
-        data-bs-interval="5000"
+        data-bs-interval="7000"
+        data-bs-pause="false"
       >
         {/* Indicators */}
         <div className="carousel-indicators">
@@ -145,7 +153,9 @@ const HomePage = () => {
         </p>
         <div className="cards">
           <div className="card">
-            <div className="icon">🌍</div>
+            <div className="icon w-100">
+              <img className="w-100" src={img2} alt="" />
+            </div>
             <h2>Culturally Sensitive Care</h2>
             <p>
               We understand the importance of cultural context in mental health,
@@ -154,7 +164,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="card">
-            <div className="icon">🧘</div>
+            <div className="icon w-100">
+              <img className="w-100" src={img3} alt="" />
+            </div>
             <h2>Holistic Approach</h2>
             <p>
               Our services integrate mind, body, and spirit, fostering total
@@ -163,7 +175,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="card">
-            <div className="icon">💼</div>
+            <div className="icon w-100">
+              <img className="w-100" src={img4} alt="" />
+            </div>
             <h2>Experienced Professionals</h2>
             <p>
               Backed by decades of expertise, our team offers compassionate,
@@ -171,7 +185,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="card">
-            <div className="icon">🤝</div>
+            <div className="icon w-100">
+              <img className="w-100" src={img5} alt="" />
+            </div>
             <h2>Empowering Community</h2>
             <p>
               We create a safe space for individuals to connect, share, and
@@ -180,7 +196,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="card">
-            <div className="icon">🚀</div>
+            <div className="icon w-100">
+              <img className="w-100" src={img6} alt="" />
+            </div>
             <h2>Commitment to Your Growth</h2>
             <p>
               Our focus is not just on healing but on helping you rediscover
@@ -188,7 +206,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="card">
-            <div className="icon">💰</div>
+            <div className="icon w-100">
+              <img className="w-100" src={img7} alt="" />
+            </div>
             <h2>Accessible and Affordable Care</h2>
             <p>
               We believe mental health support should be accessible to everyone.

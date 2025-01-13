@@ -12,6 +12,7 @@ import Home from "./components/HomePage/Home";
 import ScrollToTop from "./ScrollToTop";
 import PrivacyPolicy from "./components/PrivacyPolicyPage/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndCondtionsPage/TermsAndConditions";
+import WelcomePopup from "./components/Popup/WelcomePopup";
 // import Home from "./Components/HomePage/Home";
 // import AboutUs from "./Components/AboutPage/AboutUs";
 // import Resources from "./Components/ResourcesPage/Resources";
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        {/* <WelcomePopup /> */}
         <Header />
         <Routes>
           <Route path="/*" element={<Home />} />
