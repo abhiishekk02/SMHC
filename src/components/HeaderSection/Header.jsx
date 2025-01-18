@@ -90,7 +90,7 @@ const Header = () => {
           </Button>
           <Button
             type="default"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeeSO-jAwfz6hhugdJsf3WR12PG8z7d9hWcUrAZWHbtPo9zXw/viewform?usp=header"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeeSO-jAwfz6hhugdJsf3WR12PG8z7d9hWcUrAZWHbtPo9zXw/viewform"
             size="large"
             style={{ width: "30%" }}
           >
