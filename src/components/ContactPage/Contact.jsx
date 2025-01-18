@@ -40,7 +40,7 @@ const Contact = () => {
             <Button
               className="contact-button"
               type="primary"
-              href="https://docs.google.com/forms/d/1OS49H8XeO8DkgbafV7dVpQfaxmNhOF_EhjckIO3aisg/edit"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeeSO-jAwfz6hhugdJsf3WR12PG8z7d9hWcUrAZWHbtPo9zXw/viewform?usp=header"
               target="_blank"
             >
               Service Request Form

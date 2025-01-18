@@ -3,6 +3,8 @@ import "./Home.css";
 import ReviewsSection from "../ReviewsSection/ReviewSection";
 import OurServices from "./ServicesCard";
 import Footer from "../Footer/Footer";
+import img1 from "../../Assets/Logo7.png";
+
 import img2 from "../../Assets/image-2.png";
 import img3 from "../../Assets/image-3.png";
 import img4 from "../../Assets/image-4.png";
@@ -20,8 +22,7 @@ const HomePage = () => {
         "We strive to bring mind, body, and spirit together in balance, creating a stronger, more powerful you.",
       buttonText: "Contact Us Today",
       buttonLink: "/contact",
-      backgroundImage:
-        "https://as1.ftcdn.net/v2/jpg/04/84/87/34/1000_F_484873483_hg1ofIdXbMha5lKEDG3hJBrwKh1oikTq.jpg",
+      backgroundImage: img1,
     },
     {
       id: 2,
