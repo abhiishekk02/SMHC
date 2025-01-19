@@ -22,8 +22,9 @@ export default function Footer() {
           <div className="col-md-4 footerSection">
             <h5>About Us</h5>
             <p>
-              Synergy Mental Health Center (SMHC) provides comprehensive mental
-              health services tailored to meet the unique needs of our clients.
+              Synergy Mental Health Counseling (SMHC) provides comprehensive
+              mental health services tailored to meet the unique needs of our
+              clients.
             </p>
           </div>
 
