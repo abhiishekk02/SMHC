@@ -8,7 +8,7 @@ const reviews = [
       "https://media.istockphoto.com/id/1369509530/photo/portrait-of-natural-beauty-woman-at-beach.webp?a=1&b=1&s=612x612&w=0&k=20&c=rD9aWSk2m72taQYAi59YrIzy-unYvDst4g5XyxUXigc=",
     stars: 5,
     comment:
-      "Synergy Mental Health Consulting has truly changed my life. The team’s compassion and expertise helped me navigate challenges and find my inner strength.",
+      "Synergy Mental Health Counseling has truly changed my life. The team’s compassion and expertise helped me navigate challenges and find my inner strength.",
   },
   {
     name: "B. Williams",
