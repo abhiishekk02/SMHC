@@ -148,7 +148,7 @@ const HomePage = () => {
       <div className="section">
         <h1 className="section-title">What Sets Us Apart</h1>
         <p className="section-description my-4">
-          At Synergy Mental Health Consulting, we go beyond traditional
+          At Synergy Mental Health Counseling, we go beyond traditional
           counseling to provide a truly transformative experience. Here's what
           makes us unique:
         </p>
