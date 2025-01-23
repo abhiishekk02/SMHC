@@ -3,6 +3,8 @@ import "./About.css";
 import Footer from "../Footer/Footer";
 import { Timeline } from "antd";
 import Logo2 from "../../Assets/Logo3.png";
+import FounderImg from "../../Assets/Founder.jpg";
+
 const AboutUs = () => {
   const milestones = [
     {
@@ -68,10 +70,7 @@ const AboutUs = () => {
       {/* Founder Section */}
       <div className="founder-section">
         <div className="founder-image">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1669137759430-3a04cd1a7cd0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /* Replace with actual founder's image */
-            alt="Sybil Cherisme"
-          />
+          <img src={FounderImg} alt="Sybil Cherisme" />
         </div>
         <div className="founder-details">
           <h2>The Founder</h2>
@@ -87,7 +86,7 @@ const AboutUs = () => {
             psychotherapist within the foster care system in the therapeutic
             department, serving some of the most traumatized children.
           </p>
-          <button className="read-more-button">Read More</button>
+          {/* <button className="read-more-button">Read More</button> */}
         </div>
       </div>
       {/* Timeline Section */}

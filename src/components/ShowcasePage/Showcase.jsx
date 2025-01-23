@@ -2,6 +2,13 @@ import React from "react";
 import { Carousel, Row, Col } from "antd";
 import "./Showcase.css";
 import Footer from "../Footer/Footer";
+import SC1 from "../../Assets/SC1.jpg";
+import SC2 from "../../Assets/SC2.jpg";
+
+import SC3 from "../../Assets/SC3.jpg";
+
+import SC4 from "../../Assets/SC4.jpg";
+
 const Showcase = () => {
   const images = [
     {
@@ -20,19 +27,19 @@ const Showcase = () => {
 
   const galleryImages = [
     {
-      src: "https://plus.unsplash.com/premium_photo-1673957923985-b814a9dbc03d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: SC1,
       alt: "Gallery Image 1",
     },
     {
-      src: "https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: SC2,
       alt: "Gallery Image 2",
     },
     {
-      src: "https://plus.unsplash.com/premium_photo-1674730952302-c9c9bc5da824?q=80&w=2056&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: SC3,
       alt: "Gallery Image 3",
     },
     {
-      src: "https://plus.unsplash.com/premium_photo-1674676471587-f4c4f62e15c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI3fHx8ZW58MHx8fHx8",
+      src: SC4,
       alt: "Gallery Image 4",
     },
     {
