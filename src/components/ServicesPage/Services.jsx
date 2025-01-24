@@ -6,7 +6,7 @@ export default function Services() {
   const treatments = [
     "Anxiety",
     "Depression",
-    "Relationship conflict",
+    "Relationship conflicts",
     "ADHD/ADD",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);

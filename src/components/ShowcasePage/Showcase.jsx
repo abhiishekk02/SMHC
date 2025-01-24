@@ -8,7 +8,7 @@ import SC2 from "../../Assets/SC2.jpg";
 import SC3 from "../../Assets/SC3.jpg";
 
 import SC4 from "../../Assets/SC4.jpg";
-
+import LogoVid from "../../Assets/Logo.mp4";
 const Showcase = () => {
   const images = [
     {
@@ -42,14 +42,6 @@ const Showcase = () => {
       src: SC4,
       alt: "Gallery Image 4",
     },
-    {
-      src: "https://plus.unsplash.com/premium_photo-1705883266860-81c76b274f3b?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Gallery Image 5",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1665686374006-b8f04cf62d57?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Gallery Image 6",
-    },
   ];
 
   return (
@@ -58,7 +50,7 @@ const Showcase = () => {
         <h1 className="showcase-title">Showcase</h1>
 
         {/* Hero Carousel */}
-        <Carousel autoplay>
+        {/* <Carousel autoplay>
           {images.map((image, index) => (
             <div key={index} className="hero-image">
               <img
@@ -68,8 +60,21 @@ const Showcase = () => {
               />
             </div>
           ))}
-        </Carousel>
+        </Carousel> */}
 
+        {/* Video Code Here (Infinite Loop) */}
+        <div style={{ marginTop: "20px" }}>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{ width: "100%", borderRadius: "12px" }}
+          >
+            <source src={LogoVid} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         {/* Gallery Section */}
         <Row gutter={[16, 16]} style={{ marginTop: "40px" }}>
           {galleryImages.map((image, index) => (
